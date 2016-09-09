@@ -1,3 +1,6 @@
-# My Awesome Book
+# 日常笔记
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+主要是一些日常的技术笔记，包括linux、react、java、js语言几个部分，因为近期做的产品的技术框架主要是这样的：利用Linux的openstack、ceph等开源产品为核心，包装基于这些产品等一些外围管理组件，构建方便用户使用的云计算相关产品。
+
+
+
