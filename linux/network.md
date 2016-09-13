@@ -7,9 +7,10 @@
 CentOS7.0的网卡命名规则和6.0版本有较大的变化。默认情况下CentOS7.0是以Bios中的名字作为网卡的命名标准，
 
 ```
-    \[root@centos ~\]\# service network restartRestarting network \(via systemctl\): Job for network.service failed. See 'systemctl status network.service'         and 'journalctl -xn' for details.\[FAILED\]
+\[root@centos ~\]\# service network restartRestarting network \(via systemctl\): Job for network.service failed. See 'systemctl status network.service'         and 'journalctl -xn' for details.\[FAILED\]
 
-    \[root@centos ~\]\# systemctl status networknetwork.service - LSB: Bring up\/down networking Loaded: loaded \(\/etc\/rc.d\/init.d\/network\) Active: failed \(Result: exit-code\) since Fri 2016-09-09 16:53:09 EDT; 13s ago Process: 7947 ExecStart=\/etc\/rc.d\/init.d\/network start \(code=exited, status=1\/FAILURE\)
+\[root@centos ~\]\# systemctl status network
+network.service - LSB: Bring up\/down networking Loaded: loaded \(\/etc\/rc.d\/init.d\/network\) Active: failed \(Result: exit-code\) since Fri 2016-09-09 16:53:09 EDT; 13s ago Process: 7947 ExecStart=\/etc\/rc.d\/init.d\/network start \(code=exited, status=1\/FAILURE\)
 
 
 Sep 09 16:53:09 centos network\[7947\]: RTNETLINK answers: File exists
