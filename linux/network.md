@@ -29,3 +29,18 @@ Sep 09 16:53:09 centos systemd[1]: Failed to start LSB: Bring up/down networking
 Sep 09 16:53:09 centos systemd[1]: Unit network.service entered failed state.
 ```
 
+错误修复的方式，需要在ifcfg－eth0中加入HWADDR配置：
+```
+[root@centos network-scripts]# more ifcfg-eth0
+TYPE=Ethernet
+BOOTPROTO=dhcp
+DEFROUTE=yes
+PEERDNS=yes
+PEERROUTES=yes
+IPV4_FAILURE_FATAL=no
+UUID=e8351680-25a8-4cb3-b953-e132123f2e69
+NAME=eth0
+HWADDR="00:0c:29:28:3c:71"
+ONBOOT=yes
+```
+
