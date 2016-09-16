@@ -8,7 +8,7 @@ CentOS7.0的网卡命名规则和6.0版本有较大的变化。默认情况下Ce
 
 ### serive network restart出错
 
-centos7版本，在修改了网卡的名字和网络配置的时候，service network restart，出错。开始以为是NetworkManager和network服务之间有冲突，后来发现是没有在网卡的
+centos7版本，在修改了网卡的名字和网络配置的时候，service network restart，出错。开始以为是NetworkManager和network服务之间有冲突，后来发现是没有在网卡的相关配置文件中加入MAC地址的配置。
 
 ```
 [root@centos ~]# service network restart
