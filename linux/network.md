@@ -33,7 +33,7 @@ Sep 09 16:53:09 centos systemd[1]: Failed to start LSB: Bring up/down networking
 Sep 09 16:53:09 centos systemd[1]: Unit network.service entered failed state.
 ```
 
-错误修复的方式，需要在ifcfg－eth0中加入HWADDR配置。
+错误修复的方式，需要在ifcfg－eth0中加入HWADDR配置（MAC地址）。
 
 > 注意：MAC地址必须用“”扩起来。
 
