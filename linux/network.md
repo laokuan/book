@@ -6,7 +6,8 @@
 
 CentOS7.0的网卡命名规则和6.0版本有较大的变化。默认情况下CentOS7.0是以Bios中的名字作为网卡的命名标准，
 
-###serive network restart出错
+### serive network restart出错
+
 centos7版本，在修改了网卡的名字和网络配置的时候，service network restart，出错。开始以为是NetworkManager和network服务之间有冲突，后来发现是没有在网卡的
 
 ```
@@ -32,7 +33,9 @@ Sep 09 16:53:09 centos systemd[1]: Failed to start LSB: Bring up/down networking
 Sep 09 16:53:09 centos systemd[1]: Unit network.service entered failed state.
 ```
 
-错误修复的方式，需要在ifcfg－eth0中加入HWADDR配置：
+错误修复的方式，需要在ifcfg－eth0中加入HWADDR配置。
+
+> 注意：MAC地址必须用“”扩起来。
 
 ```
 [root@centos network-scripts]# more ifcfg-eth0
