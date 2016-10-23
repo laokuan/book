@@ -4,8 +4,9 @@
 
 ### 登录地址
 
-首先，登录到阿里图标库上：[http://www.iconfont.cn](http://www.iconfont.cn/)，选择采用“微博登录”，登录名：digzeta@163.com，密码：dz123456，
-如下图所示：
+首先，登录到阿里图标库上：[http:\/\/www.iconfont.cn](http://www.iconfont.cn/)，选择采用“微博登录”，登录名：digzeta@163.com，密码：dz123456。
 
-![](/assets/屏幕快照 2016-10-23 下午2.29.42.png)
+### 搜索图标
+
+
 
