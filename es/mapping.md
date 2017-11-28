@@ -1,6 +1,8 @@
 ###格式
 
 ```
+//用put方法提交，my_index是索引名字
+PUT my_index
 {
   "mappings": {
     "user": {
