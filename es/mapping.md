@@ -5,6 +5,7 @@
 PUT my_index
 {
   "mappings": {
+    //这个是type类型
     "user": {
       "_all":       { "enabled": false  },
       "properties": {
