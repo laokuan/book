@@ -1,6 +1,18 @@
 1. ###前端和后端的数据模型
 ##### syslog的趋势图前端数据结构如下
 ```
+最终的json结构
+const result = {
+  list: dataSource,
+  pagination: {
+    total: dataSource.length,
+    pageSize,
+    current: parseInt(params.currentPage, 10) || 1,
+  },
+};
+```
+```
+//上面的list中的对象结构
 let syslogDataSource = {
   //表格数据
   tableList: [
@@ -16,7 +28,7 @@ let syslogDataSource = {
   ],
   //图表数据
   chartList: [
-    {name: '高', data: []}, 
+    {name: '高', data: [[10000, 30000], []}, 
     {name: '中', data: []}, 
     {name: '低', data: []}
   ],
