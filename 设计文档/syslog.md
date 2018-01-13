@@ -71,7 +71,9 @@ const result = {
 let syslogDataSource = {
   //返回的数据表
   tableList: [],
+  //饼图的数据
   chartList: [],
+  //设备列表
   devList: [{
     name: "华为测试1",
     id: 141,
@@ -79,6 +81,7 @@ let syslogDataSource = {
     org_id: 1,
     ip: "172.16.254.2"
   }],
+  //设备分类
   devTypeList: [{
     type_name: "网络设备",
     id: 1
@@ -92,15 +95,13 @@ let syslogDataSource = {
     type_name: "应用设备",
     id: 4
   }],
+  //组织结构
   orgList: [{
     name: "集团总部",
     parent_ids: "0",
     id: 1
-  },{
-    name: "FLOW测试设备",
-    parent_ids: "1",
-    id: 9
   }],
+  //聚合条件
   aggregation: [
       {name: "设备类型", value: "dev_type"},
       {name: "设备IP", value: "dev_ip_addr"},
