@@ -54,3 +54,61 @@ let syslogDataSource = {
   }],
 };
 ```
+##### syslog的TOP数据结构如下
+```
+最终的json结构
+const result = {
+  list: dataSource,
+  pagination: {
+    total: dataSource.length,
+    pageSize,
+    current: parseInt(params.currentPage, 10) || 1,
+  },
+};
+```
+```
+//上面的dataSource的数据结构如下
+let syslogDataSource = {
+  //返回的数据表
+  tableList: [],
+  chartList: [],
+  devList: [{
+    name: "华为测试1",
+    id: 141,
+    type: 1,
+    org_id: 1,
+    ip: "172.16.254.2"
+  }],
+  devTypeList: [{
+    type_name: "网络设备",
+    id: 1
+  },{
+    type_name: "安全设备",
+    id: 2
+  },{
+    type_name: "服务器设备",
+    id: 3
+  },{
+    type_name: "应用设备",
+    id: 4
+  }],
+  orgList: [{
+    name: "集团总部",
+    parent_ids: "0",
+    id: 1
+  },{
+    name: "FLOW测试设备",
+    parent_ids: "1",
+    id: 9
+  }],
+  aggregation: [
+      {name: "设备类型", value: "dev_type"},
+      {name: "设备IP", value: "dev_ip_addr"},
+      {name: "事件优先级", value: "log_level"},
+      {name: "事件名称", value: "msg_overview"},
+      {name: "源地址", value: "log_src_ip"},
+      {name: "目的地址", value: "log_dst_ip"},
+    ],
+};
+```
+
