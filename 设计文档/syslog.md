@@ -70,9 +70,13 @@ const result = {
 //上面的dataSource的数据结构如下
 let syslogDataSource = {
   //返回的数据表
-  tableList: [],
+  tableList: [
+    { "value": 聚合之后的数量, "name": "不同的聚合字段值 " }
+  ],
   //饼图的数据
-  chartList: [],
+  chartList: [
+    {"value": 聚合之后的数量, "name": "不同的聚合字段值 ", "sort": 排序值}
+  ],
   //设备列表
   devList: [{
     name: "华为测试1",
