@@ -101,7 +101,7 @@ let syslogDataSource = {
     parent_ids: "0",
     id: 1
   }],
-  //聚合条件
+  //聚合条件,其中的vale必须和es中的字段对应
   aggregation: [
       {name: "设备类型", value: "dev_type"},
       {name: "设备IP", value: "dev_ip_addr"},
